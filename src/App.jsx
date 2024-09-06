@@ -1,8 +1,12 @@
 import React from 'react'
+import CompA from './Props/CompA'
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+        App
+        <CompA/>
+    </div>
   )
 }
 

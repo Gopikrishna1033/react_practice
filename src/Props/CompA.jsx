@@ -1,0 +1,60 @@
+import React from "react";
+import CompB from "./CompB";
+let CompA = ()=>{
+    let employee = [{"eid":1,"ename":"Anatole","email":"Olander","gender":"Male"},
+        {"eid":2,"ename":"Carey","email":"Playhill","gender":"Female"},
+        {"eid":3,"ename":"Vince","email":"Roscow","gender":"Male"},
+        {"eid":4,"ename":"Imogen","email":"Martinets","gender":"Female"},
+        {"eid":5,"ename":"Magnum","email":"McNickle","gender":"Male"},
+        {"eid":6,"ename":"Joachim","email":"Mitchener","gender":"Male"},
+        {"eid":7,"ename":"Templeton","email":"Schiersch","gender":"Male"},
+        {"eid":8,"ename":"Dante","email":"Jansens","gender":"Male"},
+        {"eid":9,"ename":"Estevan","email":"Fleis","gender":"Male"},
+        {"eid":10,"ename":"Diego","email":"Gradly","gender":"Male"},
+        {"eid":11,"ename":"Valli","email":"Medendorp","gender":"Female"},
+        {"eid":12,"ename":"Calla","email":"Copcutt","gender":"Female"},
+        {"eid":13,"ename":"Daryle","email":"Abraham","gender":"Male"},
+        {"eid":14,"ename":"Curran","email":"Gunthorpe","gender":"Male"},
+        {"eid":15,"ename":"Rik","email":"Bute","gender":"Male"},
+        {"eid":16,"ename":"Jessamyn","email":"Singers","gender":"Female"},
+        {"eid":17,"ename":"Mitchell","email":"Larby","gender":"Male"},
+        {"eid":18,"ename":"Lorene","email":"Conlon","gender":"Female"},
+        {"eid":19,"ename":"Armand","email":"Haythorne","gender":"Male"},
+        {"eid":20,"ename":"Sergent","email":"Krzysztof","gender":"Male"},
+        {"eid":21,"ename":"Arlyne","email":"Hamblington","gender":"Female"},
+        {"eid":22,"ename":"Marco","email":"Gersam","gender":"Male"},
+        {"eid":23,"ename":"Oren","email":"Natt","gender":"Bigender"},
+        {"eid":24,"ename":"Dosi","email":"Vasyuchov","gender":"Female"},
+        {"eid":25,"ename":"Andras","email":"Fealey","gender":"Male"},
+        {"eid":26,"ename":"Gwenneth","email":"Rickesies","gender":"Female"},
+        {"eid":27,"ename":"Woodman","email":"Spaule","gender":"Male"},
+        {"eid":28,"ename":"Vin","email":"Lamberth","gender":"Male"},
+        {"eid":29,"ename":"Ethelbert","email":"Rosell","gender":"Male"},
+        {"eid":30,"ename":"Redford","email":"Bravery","gender":"Male"},
+        {"eid":31,"ename":"Mina","email":"Bartrum","gender":"Female"},
+        {"eid":32,"ename":"Hana","email":"McDavitt","gender":"Female"},
+        {"eid":33,"ename":"Gwenore","email":"Hitzschke","gender":"Female"},
+        {"eid":34,"ename":"Melvin","email":"Ansteys","gender":"Male"},
+        {"eid":35,"ename":"Symon","email":"Pharoah","gender":"Male"},
+        {"eid":36,"ename":"Marianna","email":"Easman","gender":"Female"},
+        {"eid":37,"ename":"Renaud","email":"Connell","gender":"Male"},
+        {"eid":38,"ename":"Jamie","email":"McLafferty","gender":"Male"},
+        {"eid":39,"ename":"Muriel","email":"MacNeilage","gender":"Female"},
+        {"eid":40,"ename":"Jarvis","email":"Bailey","gender":"Male"},
+        {"eid":41,"ename":"Miquela","email":"Farryn","gender":"Female"},
+        {"eid":42,"ename":"Siegfried","email":"Marian","gender":"Male"},
+        {"eid":43,"ename":"Englebert","email":"Hallbord","gender":"Male"},
+        {"eid":44,"ename":"Anette","email":"Tossell","gender":"Female"},
+        {"eid":45,"ename":"Helga","email":"Brazier","gender":"Female"},
+        {"eid":46,"ename":"Virgilio","email":"Rummings","gender":"Male"},
+        {"eid":47,"ename":"Winnie","email":"Hunnicot","gender":"Male"},
+        {"eid":48,"ename":"Elsbeth","email":"Edinboro","gender":"Female"},
+        {"eid":49,"ename":"Langsdon","email":"Lyburn","gender":"Male"},
+        {"eid":50,"ename":"Ricki","email":"Morde","gender":"Female"}]
+    return <div>
+        Component A Sending data to Component B through props and their we are performing the map function to create a table
+        <CompB employee = {employee}/>
+        
+    </div>
+}
+export default CompA
