@@ -9,8 +9,10 @@ function Login() {
    
 
     let formcheck = (event)=>{
-        event.preventDefault();  
-           alert("Please enter the required feilds")
+        event.preventDefault();
+        if(user.email === "" || user.password === ""){
+            alert("Please Enter the required feilds")
+        }
     } 
 
     
@@ -18,7 +20,7 @@ function Login() {
   return (
     <div>
         <pre>{JSON.stringify(user)}</pre>
-        <h1>{user.email}</h1>
+        {/* <h1>{user.email}</h1> */}
         <div className="container">
             <div className="row">
                 <div className="card">
@@ -29,11 +31,11 @@ function Login() {
                         <form action="" onSubmit={formcheck} >
                             <div className="form-group">
                             <label htmlFor="" className='col-form-label'>Username</label>
-                            <input type="text" className='form-control ' name='email' onChange={Handler} value={user.email} required/>
+                            <input type="text" className='form-control ' name='email' onChange={Handler} value={user.email} />
                         </div>
                         <div className="form-group">
                             <label htmlFor="" className='col-form-label'>Password</label>
-                            <input type="password" className='form-control' name='password' onChange={Handler} value={user.password}required/>
+                            <input type="password" className='form-control' name='password' onChange={Handler} value={user.password}/>
                         </div>
                         <div className="form-group">
                             <button className='btn btn-primary form-control'  type='submit'>Login</button>
