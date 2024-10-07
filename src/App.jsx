@@ -1,10 +1,11 @@
 import React from 'react'
-import Login from "./login/Login"
+
+import Initial_circle from './Tasks/Initial_circle'
 function App() {
   return (
     <div>
         App
-        <Login/>
+        /* <Login/> */
     </div>
   )
 }
