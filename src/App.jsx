@@ -1,11 +1,12 @@
 import React from 'react'
-
-import Initial_circle from './Tasks/Initial_circle'
+/* import Reducer from './hooks/Reducer' */
+import State from "./hooks/State"
 function App() {
   return (
     <div>
         App
-        /* <Login/> */
+        {/* <Reducer/>  */}
+        <State/>
     </div>
   )
 }
